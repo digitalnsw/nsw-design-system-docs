@@ -245,7 +245,7 @@ function renamePath() {
     .pipe(replace('/favicon.ico', './favicon.ico'))
     .pipe(replace('/docs/', '/nsw-design-system-docs/docs/'))
     .pipe(replace('/components', '/nsw-design-system-docs/components'))
-    .pipe(replace('href="/"', 'href="/nsw-design-system-docs"'))
+    .pipe(replace('href="/"', 'href="/nsw-design-system-docs/"'))
     .pipe(dest(config.dir.build))
     .pipe(src([`${config.dir.build}**/*.html`, `!${config.dir.build}index.html`]))
     .pipe(replace('/css/main.css', '../../css/main.css'))
