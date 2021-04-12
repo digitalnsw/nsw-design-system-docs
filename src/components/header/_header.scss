@@ -88,6 +88,8 @@
 
     @include breakpoint('lg') {
       order: 0;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -129,6 +131,19 @@
 
     svg {
       display: block;
+    }
+  }
+
+  &__logo-text {
+    display: none;
+    padding-left: rem(124px);
+
+    @include breakpoint('lg') {
+      display: block;
+    }
+
+    span {
+      margin-left: rem(16px);
     }
   }
 }

@@ -111,6 +111,19 @@
       order: 1;
     }
   }
+
+  .nsw-footer {
+    &__lower {
+      @include breakpoint('lg') {
+        padding-left: rem(52px);
+        padding-right: rem(52px);
+      }
+    }
+
+    .nsw-container {
+      margin: 0;
+    }
+  }
 }
 
 .nsw-docs-nav {
