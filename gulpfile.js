@@ -244,6 +244,7 @@ function renamePath() {
     .pipe(replace('/js/main.js', './js/main.js'))
     .pipe(replace('/favicon.ico', './favicon.ico'))
     .pipe(replace('/docs/js/docs.js', './docs/js/docs.js'))
+    .pipe(replace(/\/(components\/)(.*)(index.html)/g, './components/$2index.html'))
     .pipe(dest(config.dir.build))
     .pipe(src([`${config.dir.build}**/*.html`, `!${config.dir.build}index.html`]))
     .pipe(replace('/css/main.css', '../../css/main.css'))
@@ -252,6 +253,7 @@ function renamePath() {
     .pipe(replace('/favicon.ico', '../../favicon.ico'))
     .pipe(replace('/docs/css/docs.css', '../../docs/css/docs.css'))
     .pipe(replace('/docs/js/docs.js', '../../docs/js/docs.js'))
+    .pipe(replace(/\/(components\/)(.*)(index.html)/g, '../../components/$2index.html'))
     .pipe(dest(config.dir.build))
 }
 
