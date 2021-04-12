@@ -713,7 +713,6 @@
           this.tabPanel[clickedTabIndex].hidden = false;
           this.tabPanel[selectedTabIndex].hidden = true;
           this.selectedTab = clickedTab;
-          this.selectedTab.scrollIntoView();
         }
       }
     }, {
