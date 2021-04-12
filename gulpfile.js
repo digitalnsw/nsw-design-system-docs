@@ -243,6 +243,7 @@ function renamePath() {
     .pipe(replace('/css/main.css', './css/main.css'))
     .pipe(replace('/js/main.js', './js/main.js'))
     .pipe(replace('/favicon.ico', './favicon.ico'))
+    .pipe(replace('/docs/js/docs.js', './docs/js/docs.js'))
     .pipe(dest(config.dir.build))
     .pipe(src([`${config.dir.build}**/*.html`, `!${config.dir.build}index.html`]))
     .pipe(replace('/css/main.css', '../../css/main.css'))
