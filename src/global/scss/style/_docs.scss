@@ -6,23 +6,10 @@
 .nsw-docs {
   @include font-stack();
 
-  @include breakpoint('lg') {
-    display: flex;
-  }
-
-  &__masthead {
-    @include nsw-spacing(padding, sm none);
-    background-color: $nsw-primary-blue;
-    color: $white;
-    font-size: rem(12px);
-    padding-left: rem($container-offset);
-    padding-right: rem($container-offset);
-  }
-
-  &__title {
-    @include font-stack('heading');
-    @include font-size('lg');
-    padding: rem(30px) rem($container-offset);
+  &__wrapper {
+    @include breakpoint('lg') {
+      display: flex;
+    }
   }
 
   &__nav {
@@ -37,6 +24,10 @@
 
   &__main {
     width: 100%;
+
+    @include breakpoint('lg') {
+      padding-top: rem(137px);
+    }
   }
 
   &__top {
@@ -62,18 +53,62 @@
     .nsw-container {
       margin: 0;
     }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  .nsw-navigation {
+    z-index: 300;
+
+    @include breakpoint('lg') {
+      display: none;
+    }
+  }
+
+  .nsw-header,
+  .nsw-masthead {
+    @include breakpoint('lg') {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 300;
+    }
+
+    .nsw-container {
+      margin: 0;
+    }
+  }
+
+  .nsw-header {
+    @include breakpoint('lg') {
+      top: rem(42px);
+      border-bottom: solid 1px $light20;
+    }
+
+    &__container {
+      margin: 0;
+    }
+
+    &__center {
+      order: 1;
+    }
   }
 }
 
 .nsw-docs-nav {
   position: fixed;
-  top: 0;
+  top: rem(137px);
   bottom: 0;
   left: 0;
   width: rem(300px);
   overflow-y: auto;
   border-right: 1px solid $light20;
   background: $white;
+  z-index: 300;
 
   &__logo {
     padding-bottom: rem(40px);
