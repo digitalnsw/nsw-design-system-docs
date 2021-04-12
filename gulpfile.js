@@ -243,7 +243,7 @@ function renamePath() {
     .pipe(replace('/css/main.css', './css/main.css'))
     .pipe(replace('/js/main.js', './js/main.js'))
     .pipe(replace('/favicon.ico', './favicon.ico'))
-    .pipe(replace('/docs', '/nsw-design-system-docs/docs'))
+    .pipe(replace('/docs/', '/nsw-design-system-docs/docs/'))
     .pipe(replace('/components', '/nsw-design-system-docs/components'))
     .pipe(replace('href="/"', 'href="/nsw-design-system-docs"'))
     .pipe(dest(config.dir.build))
