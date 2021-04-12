@@ -37,6 +37,7 @@
 
     &:focus {
       @include nsw-focus;
+      outline-offset: -3px;
     }
 
     .is-selected & {
@@ -62,8 +63,12 @@
     margin-top: -2px;
 
     &--flush {
-      padding-left: 0;
-      padding-right: 0;
+      @include nsw-spacing(padding, lg none);
+      border-bottom: 0;
+
+      @include breakpoint('lg') {
+        @include nsw-spacing(padding, xxl none);
+      }
     }
 
     &:focus {

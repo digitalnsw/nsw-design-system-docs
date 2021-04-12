@@ -32,12 +32,22 @@
 
   &__top {
     background-color: $light10;
-    padding: rem(30px) 0 rem(78px);
+    padding: rem(32px) 0 rem(78px);
     margin-bottom: rem(-48px);
 
+    @include breakpoint('lg') {
+      padding: rem(68px) rem(52px) rem(88px);
+      margin-bottom: rem(-80px);
+    }
+
     &--page {
-      padding: rem(30px) 0;
+      padding-top: rem(32px);
+      padding-bottom: rem(32px);
       margin-bottom: 0;
+
+      @include breakpoint('lg') {
+        padding: rem(68px) rem(52px);
+      }
     }
 
     .nsw-container {
@@ -50,6 +60,10 @@
   }
 
   &__content {
+    @include breakpoint('lg') {
+      padding: rem(32px) rem(52px);
+    }
+
     .nsw-container {
       margin: 0;
     }
