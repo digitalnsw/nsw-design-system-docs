@@ -5,33 +5,15 @@ on:
       - main
       - master
 jobs:
-  build-production:
+  build-deploy-production:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 8
-      - run: npm install
-      - run: npm run starterkit:build
-      - uses: actions/upload-artifact@v2
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: dist
-          path: |
-            dist
-
-  deploy-production:
-    needs: build-production
-    runs-on: ubuntu-latest
-    uses: peaceiris/actions-gh-pages@v3
-  with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
-    publish_dir: ./dist
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - uses: actions/download-artifact@v2
-        with:
-          name: dist
-          path: |
-            dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
