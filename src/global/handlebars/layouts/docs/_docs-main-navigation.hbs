@@ -1,0 +1,52 @@
+<nav id="main-navigation" class="nsw-navigation js-mega-menu" aria-label="Main menu">
+  <div class="nsw-navigation__header">
+    <h2 id="nsw-navigation">Menu</h2>
+    <button type="button" class="nsw-navigation__close js-close-navigation" aria-expanded="true">
+      <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</i>
+      <span class="sr-only">Close Menu</span>
+    </button>
+  </div>
+  <ul class="nsw-navigation__list">
+    <li class="nsw-navigation__list-item">
+      <a href="/" class="nsw-navigation__link">
+        <span class="nsw-navigation__link-text">NSW Digital Design System</span>
+      </a>
+    </li>
+    <li class="nsw-navigation__list-item">
+      <a href="#" class="nsw-navigation__link">
+        <span class="nsw-navigation__link-text">Components</span>
+        <i class="material-icons nsw-material-icons nsw-navigation__link-icon" focusable="false" aria-hidden="true">keyboard_arrow_right</i>
+      </a>
+
+      <div class="nsw-subnavigation" id="subnav-914d7e2" role="region" aria-label="Components Submenu">
+        <div class="nsw-subnavigation__header">
+          <button type="button" class="nsw-subnavigation__back-btn js-close-subnav" aria-controls="subnav-914d7e2" aria-expanded="true">
+            <i class="material-icons nsw-material-icons nsw-material-icons--rotate-180" focusable="false" aria-hidden="true">keyboard_arrow_right</i>
+            <span>Back<span class="sr-only"> to previous menu</span></span>
+          </button>
+        
+          <button type="button" class="nsw-navigation__close js-close-navigation" aria-expanded="true">
+            <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</i>
+            <span class="sr-only">Close Menu</span>
+          </button>
+        </div>
+        <h2 class="nsw-subnavigation__title">
+          <a href="#" class="nsw-subnavigation__title-link">
+            <span>Components</span>
+            <i class="material-icons nsw-material-icons nsw-card__icon" focusable="false" aria-hidden="true">east</i>
+          </a>
+        </h2>
+        <p class="nsw-subnavigation__description"></p>
+        <ul class="nsw-subnavigation__list">
+          {{#each collections.componentsnav}}
+          <li class="nsw-subnavigation__list-item">
+            <a href="/{{change-extention path}}" class="nsw-subnavigation__link">
+              <span class="nsw-navigation__link-text">{{title}}</span>
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </li>     
+  </ul>
+</nav>
