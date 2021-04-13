@@ -245,6 +245,7 @@ function renamePath() {
     .pipe(replace('/docs/js/docs.js', './docs/js/docs.js'))
     .pipe(replace('/favicon.ico', './favicon.ico'))
     .pipe(replace('href="/components', 'href="/nsw-design-system-docs/components'))
+    .pipe(replace('href="/assets/images', 'href="/nsw-design-system-docs/assets/images'))
     .pipe(replace('href="/"', 'href="/nsw-design-system-docs/"'))
     .pipe(dest(config.dir.build))
     .pipe(src([`${config.dir.build}**/*.html`, `!${config.dir.build}index.html`]))
@@ -253,6 +254,7 @@ function renamePath() {
     .pipe(replace('/docs/js/docs.js', '../../docs/js/docs.js'))
     .pipe(replace('/favicon.ico', '../../favicon.ico'))
     .pipe(replace('href="/components', 'href="/nsw-design-system-docs/components'))
+    .pipe(replace('src="/assets/images', 'src="/nsw-design-system-docs/assets/images'))
     .pipe(replace('href="/"', 'href="/nsw-design-system-docs/"'))
     .pipe(dest(config.dir.build))
 }
