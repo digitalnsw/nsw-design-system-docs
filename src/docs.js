@@ -25,7 +25,7 @@ function initDocs() {
   const navLinks = document.querySelectorAll('.nsw-docs-nav a')
   var currentURL = window.location.pathname
 
-  if (currentURL == '/') currentURL = '/home/index.html'
+  if (currentURL == '/' || linkURL == '/nsw-design-system-docs/') currentURL = '/home/index.html'
 
   navLinks.forEach((link) => {
   	var linkURL = link.getAttribute('href')
