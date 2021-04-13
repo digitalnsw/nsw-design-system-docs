@@ -29,7 +29,7 @@ function initDocs() {
 
   navLinks.forEach((link) => {
   	var linkURL = link.getAttribute('href');
-    if (linkURL == '/') linkURL = '/home/index.html';
+    if (linkURL == '/' || linkURL == '/nsw-design-system-docs/') linkURL = '/home/index.html';
 
   	if (currentURL.match(linkURL)) {
 	  	link.classList.add('is-active');
