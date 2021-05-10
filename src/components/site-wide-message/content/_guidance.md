@@ -6,11 +6,7 @@ layout: partial.hbs
 ---
 ## Usage
 
-Global alerts:
-
-* are designed to capture the attention of the user in a deliberately intrusive way
-* persist over a session but are user dismissible
-* are purposefully created and not initiated by a user interaction or system event
+Global alerts are designed to capture the attention of the user in a deliberately intrusive way. They persist over a session but are user dismissible, and are purposefully created and not initiated by a user interaction or system event.
 
 Use global alerts:
 
@@ -19,9 +15,9 @@ Use global alerts:
 
 Do:
 
-* use clear, concise easy to understand language, to minimise cognitive load.
-* use at the upper most part of the screen, before the masthead.
-* reserve the use of the critical alert for circumstances which warrant it.
+* use clear, concise easy to understand language, to minimise cognitive load
+* use at the upper most part of the screen, before the masthead
+* reserve the use of the critical alert for circumstances which warrant it
 
 ### Global alert states
 
