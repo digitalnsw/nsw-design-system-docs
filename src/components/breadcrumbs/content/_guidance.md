@@ -21,12 +21,6 @@ Breadcrumb navigation should be regarded as an extra feature and shouldn’t rep
 
 If you’re using other navigational elements on the page, such as a sidebar, consider whether your users need the additional support of breadcrumbs.
 
-## Anatomy
-
-Breadcrumbs are a navigational aid that display a user's location on a website as a row of links.
-
-![](/assets/images/breadcrumb-anatomy-1.png)
-
 **Parent page**  
 Starts with the "Home" page and links users to parent-level pages in the IA
 

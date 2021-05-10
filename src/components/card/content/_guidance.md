@@ -48,12 +48,6 @@ Cards should only display enough information to give a user context. Do not use 
 
 Cards allow users to scan content in order to find their required information quickly, therefore it is important to make the content concise. Ensure the headlines are brief and explicit about the content the cards link to. Intuitive headlines and copy help the user build a clear mental model of the content.
 
-## Anatomy
-
-The only required elements of a card are it's container, headline and icon. Consider and choose content elements carefully. Test your cards with minimal content and only add additional content where they give needed context to the user.
-
-![Anatomy of card component](/assets/images/cards-anatomy-1.png "Anatomy of card component")
-
 **Container**
 Contains all elements and uses drop shadow to signify the whole card is clickable.
 
