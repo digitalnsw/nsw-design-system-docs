@@ -16,6 +16,7 @@ Use global alerts:
 Do:
 
 * use clear, concise easy to understand language, to minimise cognitive load
+* use a button or link text in the description to provide users with more information or to complete an action
 * use at the upper most part of the screen, before the masthead
 * reserve the use of the critical alert for circumstances which warrant it
 
