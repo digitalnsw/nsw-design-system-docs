@@ -31,7 +31,8 @@ Do not:
 * use with very long content, use tabs or separate pages
 * add any other UI elements within the header
 * use where important information can be hidden and missed
-* use an accordion to shorten a page.
+* use an accordion to shorten a page
+* nest accordions inside other accordions.
 
 ## Principles
 
